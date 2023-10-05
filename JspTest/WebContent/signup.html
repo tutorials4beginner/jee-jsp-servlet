@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<link href="mystyle.css" type="text/css" rel="stylesheet">
+
+
+<style type="text/css">
+
+p {
+	font-family: fantasy;
+	font-size: 1cm;
+}
+
+h1 {
+	font-family: monospace;
+	direction: ltr;
+	text-shadow: aqua;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-family:  sans-serif;
+	direction: rtl;
+}
+</style>
+
+
+</head>
+
+
+<body>
+	<form action="">
+		<table>
+			<tr>
+				<td align="center" colspan="2"><label><font style="text-transform: capitalize; padding: 2em; word-spacing: 1cm; letter-spacing: 4px; background-color: red;"> Sign-up Form </font></label></td>
+			</tr>
+			<tr>
+				<td><label>Name</label></td>
+				<td><input type="text" name="name"></td>
+			</tr>
+			<tr>
+				<td><label>Password</label></td>
+				<td><input type="password" name="pass"></td>
+			</tr>
+			<tr>
+				<td><label>Retype Password</label></td>
+				<td><input type="password" name="repass"></td>
+			</tr>
+			<tr>
+				<td><label>Age</label></td>
+				<td><input type="number" name="age" max="99" min="0"></td>
+			</tr>
+			<tr>
+				<td><label>Address</label></td>
+				<td><input type="text" name="address"></td>
+			</tr>
+			<tr>
+				<td><label>Country</label></td>
+				<td><select name="country">
+						<option value="india">India</option>
+						<option value="usa">USA</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td><label>Gender</label></td>
+				<td><input type="radio" name="gender" value="Male"
+					checked="checked">Male <input type="radio" name="gender"
+					value="Female">Female</td>
+			</tr>
+			<tr>
+				<td><label>Property</label></td>
+				<td><input type="checkbox" name="property" value="house"
+					checked="checked">I have House<br> <input
+					type="checkbox" name="property" value="car">I have car</td>
+			</tr>
+			<tr>
+				<td><label>Date of Birth</label></td>
+				<td><input type="date" name="dob" max="2000-01-02"
+					min="1979-12-31"></td>
+			</tr>
+			<tr>
+				<td><label>Favorite Color</label></td>
+				<td><input type="color" name="fav_color"></td>
+			</tr>
+			<tr>
+				<td><label>Rate yourself</label></td>
+				<td>0<input type="range" name="points" min="0" max="3">3
+				</td>
+			</tr>
+			<tr>
+				<td><label>E-mail ID</label></td>
+				<td><input type="email" name="email"></td>
+			</tr>
+			<tr>
+				<td><label>Validate Email</label></td>
+				<td><input type="button"
+					onclick="alert('Check your e-mail id')" value="Click Me!"></td>
+			</tr>
+			<tr>
+				<td><label>Say something about your hobby</label></td>
+				<td><textarea name="aboutme"></textarea></td>
+			</tr>
+			<tr>
+				<td><label>Upload Recent Photo</label></td>
+				<td><input type="image" value="Upload!"></td>
+			</tr>
+			<tr>
+				<td><label>Telephone</label></td>
+				<td><input type="tel" name="usrtel"></td>
+			</tr>
+			<tr>
+				<td><label>Add your Home-page</label></td>
+				<td><input type="url" name="homepage"></td>
+			</tr>
+			<tr>
+				<td><label>Birthday (month and year)</label></td>
+				<td><input type="month" name="bdaymonth"></td>
+			</tr>
+			<tr>
+				<td><label>Select a week</label></td>
+				<td><input type="week" name="week_year"></td>
+			</tr>
+			<tr>
+				<td><label>Select a time</label></td>
+				<td><input type="time" name="usr_time"></td>
+			</tr>
+			<tr>
+				<td><label>Birthday (date and time)</label></td>
+				<td><input type="datetime" name="bdaytime"></td>
+			</tr>
+			<tr>
+				<td><label>Birthday (date and time)</label></td>
+				<td><input type="datetime-local" name="bdaytime"></td>
+			</tr>
+			<tr>
+				<td><label>E-mail</label></td>
+				<td><input type="search" name="googlesearch"></td>
+			</tr>
+			<tr>
+				<td><label>Upload CV</label></td>
+				<td><input type="file" name="cv"></td>
+			</tr>
+			<tr>
+				<td><label></label></td>
+				<td><input type="hidden" name="hid"></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="right"><input type="reset"><input
+					type="submit" value="Signup"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

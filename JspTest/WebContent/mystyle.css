@@ -1,0 +1,17 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	background-color: orange;
+}
+
+p {
+	font-family: fantasy;
+	font-size: 1cm;
+}
+
+h1 {
+	font-family: monospace;
+	direction: ltr;
+	text-shadow: aqua;
+	text-transform: uppercase;
+}

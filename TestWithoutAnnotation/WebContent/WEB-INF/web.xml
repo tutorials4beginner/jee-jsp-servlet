@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>TestWithoutAnnotation</display-name>
+	<servlet>
+		<description>
+		</description>
+		<display-name>uvw</display-name>
+		<servlet-name>u</servlet-name>
+		<servlet-class>edu.cu.cse.TestServ</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>TestHelloServ</display-name>
+		<servlet-name>TestHelloServ</servlet-name>
+		<servlet-class>edu.cu.cse.TestHelloServ</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>u</servlet-name>
+		<url-pattern>/TestServ</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TestHelloServ</servlet-name>
+		<url-pattern>/TestHelloServ</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>home.html</welcome-file>
+
+	</welcome-file-list>
+</web-app>
